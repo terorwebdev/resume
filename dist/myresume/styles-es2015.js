@@ -490,8 +490,8 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /opt/zandar/resume/myresume/node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css */"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css");
-module.exports = __webpack_require__(/*! /opt/zandar/resume/myresume/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /opt/zandar/resume/resume/node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css */"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css");
+module.exports = __webpack_require__(/*! /opt/zandar/resume/resume/src/styles.css */"./src/styles.css");
 
 
 /***/ })
