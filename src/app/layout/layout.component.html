@@ -1,0 +1,31 @@
+<div class="example-container">
+    <mat-toolbar color="primary" [ngStyle]="toolbarSize">
+        <span class="fill-remaining-space"></span>
+        <img style="height: 100%;" src="assets/image/header/myheader.png" />
+        <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+    <mat-toolbar *ngIf="logoActivate">
+        <mat-toolbar-row>
+            <mat-nav-list *ngFor="let item of menuBar">
+                <a mat-list-item routerLinkActive="active" [routerLink]="item.route">{{item.name}}</a>
+                <mat-divider> </mat-divider>
+            </mat-nav-list>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="example-sidenav-container">
+        <mat-sidenav #sidenav mode="side" opened="true" class="sideNav" *ngIf="!logoActivate">
+            <mat-nav-list *ngFor="let item of menuBar" class="sidenavSize">
+                <a mat-list-item routerLinkActive="active" [routerLink]="item.route">{{item.name}}</a>
+                <mat-divider> </mat-divider>
+            </mat-nav-list>
+
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+</div>

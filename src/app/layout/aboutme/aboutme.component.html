@@ -1,0 +1,39 @@
+<div class="layout">
+    <mat-card class="cardMargin">
+        <mat-card-header>
+            <mat-card-title>Profile</mat-card-title>
+        </mat-card-header>
+        <mat-card>
+            <mat-card-content>
+                Hi, thank for visiting my page. Develop using angular 9. Hosting using github
+            </mat-card-content>
+        </mat-card>
+    </mat-card>
+
+    <mat-card class="cardMargin">
+        <mat-card-header>
+            <mat-card-title>Personal</mat-card-title>
+        </mat-card-header>
+        <mat-card>
+            <mat-card-content>
+                Hi, thank for visiting my page. Hosting using github
+            </mat-card-content>
+        </mat-card>
+    </mat-card>
+
+    <mat-card class="cardMargin">
+        <mat-card-header>
+            <mat-card-title>Media Social</mat-card-title>
+        </mat-card-header>
+        <mat-card>
+            <mat-card-content style="display: flex;">
+                <span class="fill-remaining-space"></span>
+                <span *ngFor="let item of mediasocial">
+                    <a (click)="goToLink(item.url)" class="ponter"><img [src]="item.img" border="1"></a>
+                    &nbsp;&nbsp;
+                </span>
+                <span class="fill-remaining-space"></span>
+            </mat-card-content>
+        </mat-card>
+    </mat-card>
+</div>
