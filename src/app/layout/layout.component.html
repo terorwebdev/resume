@@ -1,8 +1,13 @@
 <div class="example-container">
     <mat-toolbar color="primary" [ngStyle]="toolbarSize">
-        <span class="fill-remaining-space"></span>
+        <div class="row">
+            <div class="cell">
+                <img src="assets/image/header/myheader.png" />
+            </div>
+        </div>
+        <!-- <span class="fill-remaining-space"></span>
         <img style="height: 100%;" src="assets/image/header/myheader.png" />
-        <span class="fill-remaining-space"></span>
+        <span class="fill-remaining-space"></span> -->
     </mat-toolbar>
     <mat-toolbar *ngIf="logoActivate">
         <mat-toolbar-row>
