@@ -1,14 +1,15 @@
 <div class="example-container">
-    <mat-toolbar color="primary" [ngStyle]="toolbarSize">
+
+    <mat-toolbar class="myPrimary" [ngStyle]="toolbarSize">
+        <div class="fill-remaining-space"></div>
         <div class="row">
             <div class="cell">
                 <img src="assets/image/header/myheader.png" />
             </div>
         </div>
-        <!-- <span class="fill-remaining-space"></span>
-        <img style="height: 100%;" src="assets/image/header/myheader.png" />
-        <span class="fill-remaining-space"></span> -->
+        <div class="fill-remaining-space"></div>
     </mat-toolbar>
+
     <mat-toolbar *ngIf="logoActivate">
         <mat-toolbar-row>
             <mat-nav-list *ngFor="let item of menuBar">

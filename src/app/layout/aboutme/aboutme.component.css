@@ -3,7 +3,7 @@
 }
 
 .cardMargin {
-    margin: 4px
+    margin: 4px;
 }
 
 .fill-remaining-space {
@@ -14,4 +14,13 @@ Every toolbar row uses a flexbox row layout. */
 
 .ponter {
     cursor: pointer;
+}
+
+.profileKey {
+    flex: 30;
+    font-weight: bold;
+}
+
+.profileValue {
+    flex: 120
 }
