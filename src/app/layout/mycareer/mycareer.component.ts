@@ -20,6 +20,28 @@ export class MycareerComponent implements OnInit {
     'Development of Integration module with hotel Property Management System (PMS) and Hospital Information System (HIS).'
   ];
 
+  gsc = [
+    'System migration (Moving legacy stand-alone system to Web Base application)',
+    'Centralize management system to manage remote devices and physical content delivery.',
+    'Implement Content delivery network module.',
+    'Fully customize digital signage application using Samsung Tizen operating System.',
+    'End-to-end Data integration module to integrate with Cinema Management System and transform data to digital signage display.',
+    'Develop reporting system.',
+  ];
+
+  regen = [
+    'IPTV solution integration with Hospital Information System.',
+    'End-to-end messaging platform for Operator and Patient using smart TV apps.',
+    'Transforming hand writing Hospital Patient Boards into fully customize Digital Patient Boards (both front and back end).',
+    'Development of hospital Patient Appointment System.',
+  ];
+
+  samasama = [
+    'In-house advertising integrated with Qubit IPTV solution.',
+    'Flight Schedule apps development integrated with IPTV solution.',
+    'IPTV solution integrated with Video On Demand content provider.',
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

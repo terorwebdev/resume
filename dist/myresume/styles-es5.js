@@ -79,13 +79,13 @@
 
     exports = ___CSS_LOADER_API_IMPORT___(true); // Module
 
-    exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n    font-family: Roboto, \"Helvetica Neue\", sans-serif;\n    background: #1E1E1E;\n}\n\n.myPrimary {\n    background: #1E1E1E;\n    color: #fff;\n}\n\n.row {\n    display: flex;\n}", "", {
+    exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n    font-family: Roboto, \"Helvetica Neue\", sans-serif;\n    background: #1E1E1E;\n}\n\n.myPrimary {\n    background: #1E1E1E;\n    color: #fff;\n}\n\n.row {\n    display: flex;\n}\n\n.fill-remaining-space {\n    /* This fills the remaining space, by using flexbox.\nEvery toolbar row uses a flexbox row layout. */\n    flex: 1 1 auto;\n}", "", {
       "version": 3,
       "sources": ["styles.css"],
       "names": [],
-      "mappings": "AAAA,8EAA8E;;AAE9E;;IAEI,YAAY;AAChB;;AAEA;IACI,SAAS;IACT,iDAAiD;IACjD,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;IACnB,WAAW;AACf;;AAEA;IACI,aAAa;AACjB",
+      "mappings": "AAAA,8EAA8E;;AAE9E;;IAEI,YAAY;AAChB;;AAEA;IACI,SAAS;IACT,iDAAiD;IACjD,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;IACnB,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI;8CAC0C;IAC1C,cAAc;AAClB",
       "file": "styles.css",
-      "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n    font-family: Roboto, \"Helvetica Neue\", sans-serif;\n    background: #1E1E1E;\n}\n\n.myPrimary {\n    background: #1E1E1E;\n    color: #fff;\n}\n\n.row {\n    display: flex;\n}"]
+      "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n    font-family: Roboto, \"Helvetica Neue\", sans-serif;\n    background: #1E1E1E;\n}\n\n.myPrimary {\n    background: #1E1E1E;\n    color: #fff;\n}\n\n.row {\n    display: flex;\n}\n\n.fill-remaining-space {\n    /* This fills the remaining space, by using flexbox.\nEvery toolbar row uses a flexbox row layout. */\n    flex: 1 1 auto;\n}"]
     }]); // Exports
 
     module.exports = exports;

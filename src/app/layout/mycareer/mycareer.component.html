@@ -18,7 +18,7 @@
         </mat-card-header>
         <mat-card>
             <mat-card-content>
-                <h3> Qubit Interactive Sdn Bhd (2017 - Present) </h3>
+                <h3><b>Qubit Interactive Sdn Bhd (2017 - Present)</b></h3>
             </mat-card-content>
             <mat-card-content>
                 Fast moving software development company, specialized in IPTV and Smart TV solution for hospitality market. The company has been established by media solution experts from Korea and Malaysia. Qubit Interactive takes up the biggest market share for hospitality
@@ -27,9 +27,10 @@
                 <div>Website : &nbsp;<a (click)="openWebsite()" style="color: blue;">www.qubit.asia</a></div>
             </mat-card-content>
         </mat-card>
+
         <mat-card>
             <mat-card-content>
-                <h3> Software Developer Tasks </h3>
+                <h3><b>Software Developer Tasks</b></h3>
             </mat-card-content>
             <mat-card-content>
                 <mat-list>
@@ -37,12 +38,34 @@
                 </mat-list>
             </mat-card-content>
         </mat-card>
+
         <mat-card>
             <mat-card-content>
-                <h3> Project Involves </h3>
+                <h3><b>Project Involves</b></h3>
             </mat-card-content>
             <mat-card-content>
-                here
+
+                <mat-list>
+                    <mat-list>
+                        <h3><b>Golden Screen Cinema – GSC</b></h3>
+                    </mat-list>
+                    <mat-list-item *ngFor="let task of gsc; index as i"> {{i + 1}}. &nbsp;{{task}} </mat-list-item>
+                </mat-list>
+
+                <mat-list>
+                    <mat-list>
+                        <h3><b>Regen Rehab Hospital</b></h3>
+                    </mat-list>
+                    <mat-list-item *ngFor="let task of regen; index as i"> {{i + 1}}. &nbsp;{{task}} </mat-list-item>
+                </mat-list>
+
+                <mat-list>
+                    <mat-list>
+                        <h3><b>Sama-Sama Hotel and Sama-Sama Express</b></h3>
+                    </mat-list>
+                    <mat-list-item *ngFor="let task of samasama; index as i"> {{i + 1}}. &nbsp;{{task}} </mat-list-item>
+                </mat-list>
+
             </mat-card-content>
         </mat-card>
     </mat-card>

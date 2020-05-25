@@ -14,7 +14,7 @@ export class MystudyComponent implements OnInit {
       id: 1,
       title: 'Big Data Engineering',
       type: 'image',
-      data: '/assets/image/profile/bigdata.png'
+      data: 'assets/image/profile/bigdata.png'
     },
     {
       id: 2,
