@@ -1,11 +1,11 @@
 <div class="layout">
     <mat-card class="cardMargin">
-        <mat-card-header>
-            <mat-card-title>Education</mat-card-title>
-        </mat-card-header>
         <mat-card>
-            <mat-card-content>
+            <mat-card-header>
+                <mat-card-title>Education</mat-card-title>
+            </mat-card-header>
 
+            <mat-card-content style="margin: 0 16px;">
                 <div class="row">
                     <div>Master</div>
                     <div>: Master of Science in Computer Networking</div>
@@ -28,14 +28,17 @@
             </mat-card-content>
         </mat-card>
     </mat-card>
+
     <mat-card class="cardMargin">
-        <mat-card-header>
-            <mat-card-title>Professional Certificates</mat-card-title>
-        </mat-card-header>
         <mat-card>
-            <mat-card-content>
+            <mat-card-header>
+                <mat-card-title>Professional Certificates</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content style="margin: 0 16px;">
                 <div class="row">
-                    <div>Big Data Engineering</div>
+                    <div>Big Data Engineering ~ </div>
+                    <div (click)="open(1)" style="color: blue;">view</div>
                 </div>
                 <div class="row">
                     <div>Cisco Certified Network Associate (CCNA)</div>

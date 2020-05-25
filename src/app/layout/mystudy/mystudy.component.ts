@@ -1,4 +1,6 @@
+import { MediaComponent } from './../../modals/media/media.component';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-mystudy',
@@ -7,9 +9,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MystudyComponent implements OnInit {
 
-  constructor() { }
+  mediaData = [
+    {
+      id: 1,
+      title: 'Big Data Engineering',
+      type: 'image',
+      data: '/assets/image/profile/bigdata.png'
+    },
+    {
+      id: 2,
+      title: 'Cisco CCNA',
+      type: 'image',
+      data: ''
+    }
+  ];
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  open(id) {
+    let openThis = this.mediaData.filter(
+      (item) => item.id === id
+    );
+
+    let dialogRef = this.dialog.open(MediaComponent, {
+      width: '80%',
+      height: '80%',
+      data: openThis[0]
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      const incoming = result;
+    });
   }
 
   onNavigate(){

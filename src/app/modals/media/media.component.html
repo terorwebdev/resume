@@ -1,0 +1,16 @@
+<div matDialogTitle style="display: flex;">
+    <h1>{{viewThis.title}} </h1>
+    <span class="fill-remaining-space"></span>
+    <button mat-raised-button (click)="cancel()" class="myPrimary">Close</button>
+</div>
+<mat-dialog-content>
+    <div *ngIf="viewThis.type === 'image'">
+        <img [src]="viewThis.data" width="100%" height="100%" />
+    </div>
+    <div *ngIf="viewThis.type === 'video'"></div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+
+</mat-dialog-actions>

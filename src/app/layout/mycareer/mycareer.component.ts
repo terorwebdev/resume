@@ -9,6 +9,7 @@ export class MycareerComponent implements OnInit {
 
   taskList = [
     'Enhance and develop front and back end web application for Qubit Software solution.',
+    'Develop Frontend, Backend, and Apps UI using Angular and Materials',
     'Design and Implement in-house network architecture and IPTV solution.',
     'Develop and Customize smart TV and digital signage apps of Samsung and LG device based on operating system Tizen and Procentric.',
     'Participating in software testing for LG Procentric operating system (LG R&D Korea).',
@@ -22,6 +23,11 @@ export class MycareerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openWebsite() {
+    const url = 'https://www.qubit.asia/';
+    window.open(url, '_blank');
   }
 
 }

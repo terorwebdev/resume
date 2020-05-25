@@ -11,6 +11,7 @@ import { MycareerComponent } from './layout/mycareer/mycareer.component';
 import { MystudyComponent } from './layout/mystudy/mystudy.component';
 import { WelcomeComponent } from './modals/welcome/welcome.component';
 import { TechskillsComponent } from './layout/techskills/techskills.component';
+import { MediaComponent } from './modals/media/media.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TechskillsComponent } from './layout/techskills/techskills.component';
     MycareerComponent,
     MystudyComponent,
     WelcomeComponent,
-    TechskillsComponent
+    TechskillsComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
