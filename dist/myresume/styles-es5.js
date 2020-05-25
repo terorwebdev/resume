@@ -79,13 +79,13 @@
 
     exports = ___CSS_LOADER_API_IMPORT___(true); // Module
 
-    exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nhtml, body { height: 100%; }\n\nbody { margin: 0; font-family: Roboto, \"Helvetica Neue\", sans-serif; }\n", "", {
+    exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n    font-family: Roboto, \"Helvetica Neue\", sans-serif;\n    background: #1E1E1E;\n}\n\n.myPrimary {\n    background: #1E1E1E;\n    color: #fff;\n}\n\n.row {\n    display: flex;\n}", "", {
       "version": 3,
       "sources": ["styles.css"],
       "names": [],
-      "mappings": "AAAA,8EAA8E;;AAE9E,aAAa,YAAY,EAAE;;AAC3B,OAAO,SAAS,EAAE,iDAAiD,EAAE",
+      "mappings": "AAAA,8EAA8E;;AAE9E;;IAEI,YAAY;AAChB;;AAEA;IACI,SAAS;IACT,iDAAiD;IACjD,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;IACnB,WAAW;AACf;;AAEA;IACI,aAAa;AACjB",
       "file": "styles.css",
-      "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\n\nhtml, body { height: 100%; }\nbody { margin: 0; font-family: Roboto, \"Helvetica Neue\", sans-serif; }\n"]
+      "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n    font-family: Roboto, \"Helvetica Neue\", sans-serif;\n    background: #1E1E1E;\n}\n\n.myPrimary {\n    background: #1E1E1E;\n    color: #fff;\n}\n\n.row {\n    display: flex;\n}"]
     }]); // Exports
 
     module.exports = exports;

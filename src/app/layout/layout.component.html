@@ -28,7 +28,7 @@
 
         </mat-sidenav>
 
-        <mat-sidenav-content>
+        <mat-sidenav-content (scroll)="onScroll($event)">
             <router-outlet></router-outlet>
         </mat-sidenav-content>
 
